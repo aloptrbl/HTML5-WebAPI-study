@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vibration</title>
+</head>
+<body>
+<h1>Vibration</h1>
+<p>Only work on mobile devices with Chrome/Edge/Mozilla browser support</p>
+<script>
+//vibrate for 1 second
+window.navigator.vibrate(1000);
+//vibrate with a pattern
+window.navigator.vibrate([400, 300, 300, 200, 500]);
+//turn off vibration
+window.navigator.vibrate(0);
+</script>
+</body>
+</html>

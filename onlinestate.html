@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online State</title>
+    <style>
+    #status {
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+<h1 id="status"></h1>
+<ol>
+        <li>Press right click and choose Inspect.</li>
+        <li>Click Console.</li> 
+        <li>Connect & Disconnect your internet connection.</li>
+    </ol>
+<script>
+console.log(navigator.onLine ? 'online' : 'offline')
+navigator.onLine ? document.getElementById('status').innerHTML = "online" : document.getElementById('status').innerHTML = "offline";
+</script>
+</body>
+</html>

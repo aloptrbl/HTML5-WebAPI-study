@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gamepad</title>
+</head>
+<body>
+<h1>Gamepad</h1>
+<p>connect your controller with your browser</p>  
+<script>
+window.addEventListener('gamepadconnected', () => {
+    let gp = navigator.getGamepads()[0];
+
+    console.log('ID:', gp.id);
+    console.log('Axes:', gp.axes.length);
+    console.log('Buttons:', gp.buttons.length);
+})
+
+/*
+window.addEventListener('gamepadconnected', gameLoop);
+function gameLoop(){
+    let gp = navigator.getGamepads()[0];
+
+    if(gp.buttons[0].pressed) {
+        console.log('X');
+    }
+
+    requestAnimationFrame(gameLoop);
+}
+*/
+</script>
+</body>
+</html>

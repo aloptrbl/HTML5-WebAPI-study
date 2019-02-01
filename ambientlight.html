@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ambient Light</title>
+</head>
+<body>
+<h1>Device Ambient Light</h1>
+<p>Only work on mobile device.</p>
+<script>
+window.addEventListener('devicelight', (e) => {
+    console.log(`${e.value} lux`);
+})
+
+//future reference
+//let sensor = new AmbientLightSensor();
+//sensor.start();
+//sensor.onchange = (e) => {
+// console.log(e.reading.illuminance);   
+//};
+//sensor.stop();
+</script> 
+</body>
+</html>

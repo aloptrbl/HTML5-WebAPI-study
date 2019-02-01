@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Visibility</title>
+    <style>
+    h1 {
+    text-align: center;
+    }
+  
+    </style>
+</head>
+<body>
+<h1>Page Visibility</h1>
+<ol>
+    <li>Press right click and choose Inspect.</li>
+    <li>Click Console.</li> 
+    <li>Change Tabs.</li>
+</ol>
+<script>
+window.addEventListener('visibilitychange', ()=> {
+   // if (document.hidden) {
+     //   console.log('Tab is hidden');
+       // document.body.style.backgroundColor = "blue";
+    //}
+    //else {
+      //  console.log('Tab is focused');
+        //document.body.style.backgroundColor = "black";
+    //}
+
+    switch(document.visibilityState){
+        case 'prerender':
+        console.log('Tab is pre-rendering');
+        break;
+        case 'hidden':
+        console.log('Tab is hidden');
+        break;
+        case 'visible':
+        console.log('Tab is focused');
+        break;
+    }
+});
+</script>
+</body>
+</html>
